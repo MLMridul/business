@@ -1,39 +1,61 @@
 // Preloader Js
 
-$(window).on("load", function () {
-    $('.pre-main').delay(2700).fadeOut();
-    $('.pre-main .preloader').delay(2000).fadeOut();
-    $('.pre-main span:first-of-type').css({
-        'left': '-50%'
-    })
-    $('.pre-main span:last-of-type').css({
-        'right': '-50%'
+// $(window).on("load", function () {
+//     $('.pre-main').delay(2700).fadeOut();
+//     $('.pre-main .preloader').delay(2000).fadeOut();
+//     $('.pre-main span:first-of-type').css({
+//         'left': '-50%'
+//     })
+//     $('.pre-main span:last-of-type').css({
+//         'right': '-50%'
 
-    })
+//     })
 
-})
+// })
 
 // Preloader Js
 
-// $(window).scroll(function () {
-//     var scrooling = $(this).scrollTop();
-//     if (scrooling > 400) {
-//         $('.scrolltop').css({
-//             'right': '30px',
-//             'visibility': 'visible'
+$(window).scroll(function () {
+    var scrooling = $(this).scrollTop();
+    if (scrooling > 400) {
+        $('.scrollTop').slideDown();
+    } else {
+        $('.scrollTop').slideUp()
+    };
+    if (scrooling > 300) {
+        $('#navbar').addClass('bg');
+    } else {
+        $('#navbar').removeClass('bg');
+    }
 
-//         });
-//     } else {
-//         $('.scrolltop').css({
-//             'right': '100%'
-//         });
-//     }
-//     if (scrooling > 300) {
-//         $('.menu-bg').addClass('bg');
-//     } else {
-//         $('.menu-bg').removeClass('bg');
-//     }
-// });
+});
+
+$('.scrollTop').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 2000)
+});
+
+//animation scroll js
+var html_body = $('html, body');
+$('nav a').on('click', function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            html_body.animate({
+                scrollTop: target.offset().top - 0
+            }, 1500, );
+            return false;
+        }
+    }
+});
+
+
+// Fixed Nav
+
+
+
 
 // Banner SLider
 $('.banner-slider').slick({
