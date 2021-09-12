@@ -436,6 +436,96 @@ ul {
 
 
 /* ================= 
+    About Css Starts
+================= */
+
+#about {
+    background: #a5a5a5;
+    height: 400px;
+}
+
+#about .about {
+    display: flex;
+}
+
+#about .about .about-left {
+    width: 50%;
+    padding-top: 50px;
+}
+
+#about .about .about-left img {
+    width: 100%;
+}
+
+#about .about .about-right {
+    width: 50%;
+}
+
+#about .about .about-right h3 {
+    font-family: var(--main-fo);
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+#about .about .about-right p {
+    font-family: var(--main-fo);
+    font-size: 13px;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-left: 40px;
+}
+
+#about .about .about-right h4 {
+    font-family: var(--main-fo);
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+#about #flipdown {
+    margin: 0 auto;
+    width: 450px;
+}
+
+#about .flipdown .rotor::after {
+    bottom: -5px;
+    width: 35px;
+}
+
+#about .flipdown .rotor {
+    width: 35px;
+    height: 75px;
+}
+
+#about .flipdown .rotor-leaf {
+    width: 35px;
+    height: 75px;
+}
+
+#about .flipdown .rotor-top,
+.flipdown .rotor-bottom {
+    width: 35px;
+    height: 35px;
+}
+
+#about .flipdown .rotor-leaf-front,
+.flipdown .rotor-leaf-rear {
+    width: 35px;
+}
+
+/* ================= 
+    About Css Ends
+================= */
+
+
+/* ================= 
     Offer Css Starts
 ================= */
 
