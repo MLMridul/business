@@ -1,17 +1,17 @@
 // Preloader Js
 
-// $(window).on("load", function () {
-//     $('.pre-main').delay(2700).fadeOut();
-//     $('.pre-main .preloader').delay(2000).fadeOut();
-//     $('.pre-main span:first-of-type').css({
-//         'left': '-50%'
-//     })
-//     $('.pre-main span:last-of-type').css({
-//         'right': '-50%'
+$(window).on("load", function () {
+    $('.pre-main').delay(2700).fadeOut();
+    $('.pre-main .preloader').delay(2000).fadeOut();
+    $('.pre-main span:first-of-type').css({
+        'left': '-50%'
+    })
+    $('.pre-main span:last-of-type').css({
+        'right': '-50%'
 
-//     })
+    })
 
-// })
+})
 
 // Preloader Js
 
