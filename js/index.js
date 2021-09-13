@@ -109,7 +109,7 @@ $('.testimonial-slider').slick({
 document.addEventListener('DOMContentLoaded', () => {
 
     // Unix timestamp (in seconds) to count down to
-    var twoDaysFromNow = (new Date('January 01, 2022').getTime() / 1000) + (86400 * 2) + 1;
+    var twoDaysFromNow = (new Date('January 01, 2022').getTime() / 1000);
 
     // Set up FlipDown
     var flipdown = new FlipDown(twoDaysFromNow)
