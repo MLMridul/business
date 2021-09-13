@@ -280,6 +280,7 @@ ul {
 .bg {
     height: 80px !important;
     position: fixed !important;
+    box-shadow: 5px 0px 5px #222;
 }
 
 .bg .navbar {
@@ -523,6 +524,7 @@ ul {
 #about .about .about-left {
     width: 50%;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 #about .about .about-left img {
@@ -531,6 +533,7 @@ ul {
 
 #about .about .about-right {
     width: 50%;
+    overflow: hidden;
 }
 
 #about .about .about-right h3 {
@@ -603,7 +606,7 @@ ul {
 
 #services {
     height: 640px;
-    margin: 80px 0 10px;
+    padding: 80px 0 10px;
     overflow: hidden;
 }
 
@@ -762,14 +765,15 @@ ul {
     Gallery Css Starts
 =================== */
 
-#portfolio {}
+#portfolio {
+    padding-top: 100px;
+}
 
 #portfolio .gallery {}
 
 #portfolio .gallery .gallery-top {
     height: 175px;
     text-align: center;
-    margin-top: 100px;
 }
 
 #portfolio .gallery .gallery-top h3 {
@@ -947,10 +951,11 @@ ul {
     Testimonial Css Starts
 ======================= */
 
-#testimonial {}
+#testimonial {
+    padding-top: 80px;
+}
 
 #testimonial .testimonial {
-    margin-top: 80px;
     margin-bottom: 100px;
 }
 
