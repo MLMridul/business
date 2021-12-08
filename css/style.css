@@ -480,24 +480,40 @@ ul {
 ================= */
 
 #info {
-    display: flex;
+    position: relative;
 }
 
-#info .info-left {
-    background: url(../images/about.jpg) no-repeat center / cover;
-    width: 50%;
-    height: 100%;
+
+#info::before{
+        content: "";
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../images/about.jpg) no-repeat center / cover;
+        z-index: -1;
+    
 }
+#info::after{
+        content: "";
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: var(--pri-bg-col);
+        z-index: -1;
+    
+}
+
 
 #info .info-right {
-    width: 50%;
-    height: 100%;
-    background: var(--pri-bg-col);
+    padding-top: 95px;
+    padding-bottom: 85px;
 }
 
 #info .info-right .info-text {
-    margin-left: 70px;
-    margin-top: 95px;
 }
 
 #info .info-right .info-text h3 {
@@ -922,13 +938,13 @@ ul {
 
 #testimonial .testimonial .slick-dots .slick-active::after {
     content: "";
-    width: 10px;
-    height: 10px;
-    border: 3px solid #d4d3d4;
+    width: 13px;
+    height: 13px;
+    border: 3px solid #709dca;
     border-radius: 50%;
     position: absolute;
-    top: -3px;
-    left: -3px;
+    top: -2px;
+    left: -2px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -953,16 +969,11 @@ ul {
 
 #about {
     background: #a5a5a5;
-    height: 400px;
-}
-
-#about .about {
-    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #about .about .about-left {
-    width: 50%;
-    padding-top: 50px;
     overflow: hidden;
 }
 
@@ -971,7 +982,6 @@ ul {
 }
 
 #about .about .about-right {
-    width: 50%;
     overflow: hidden;
 }
 
@@ -980,7 +990,6 @@ ul {
     font-size: 30px;
     color: #fff;
     text-transform: uppercase;
-    padding-top: 40px;
     padding-left: 40px;
 }
 
@@ -1040,51 +1049,41 @@ ul {
 
 
 /* ===================== 
-    Contact Css Starts
+    footer Css Starts
 ===================== */
 
-#contact {
+#footer {
     background: #273a43;
-    height: 255px;
     padding: 80px 0 40px;
     overflow: hidden;
 }
 
-#contact .footer {
-    display: flex;
-}
-
-#contact .footer .one,
-#contact .footer .two,
-#contact .footer .three,
-#contact .footer .four {
-    width: 25%;
-}
+#footer .footer {}
 
 
 #footer .footer .footer-heading {
-    height: 50px;
+    margin-bottom: 20px;
 }
 
-#contact .footer .footer-heading h2 {
+#footer .footer .footer-heading h3 {
     font-family: 'Pacifico', cursive;
     font-size: 22px;
     font-weight: 400;
     color: #fff;
 }
 
-#contact .footer .footer-heading h3 {
+#footer .footer .footer-heading h5 {
     color: #fff;
     font-family: var(--main-fo);
     font-size: 22px;
     font-weight: 400;
 }
 
-#contact .footer .footer-text {
+#footer .footer .footer-text {
     color: #c4c4c4;
 }
 
-#contact .footer .footer-text h6 {
+#footer .footer .footer-text h6 {
     font-family: var(--seco-fo);
     font-weight: 400;
     font-size: 14px;
@@ -1092,74 +1091,74 @@ ul {
     padding-right: 20px;
 }
 
-#contact .footer .footer-text p {
+#footer .footer .footer-text p {
     font-family: var(--main-fo);
-    font-size: 13.5px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    padding-right: 11px;
+    word-break: break-all;
 }
 
-#contact .footer .footer-text .item-2 p {
-    padding-bottom: 15px;
+#footer .footer .footer-text .item-2 p {
+    padding-bottom: 10px;
 }
 
-#contact .footer .footer-text .social {
-    height: 35px;
-    display: flex;
+#footer .footer .footer-text .social {
+    position: relative;
 }
 
-#contact .footer .footer-text .social .fa {
+#footer .footer .footer-text .social .fa {
     color: #71b6d5;
+    font-size: 22px;
 }
 
-#contact .footer .footer-text .social p {
+#footer .footer .footer-text .social .text {
+    padding-left: 40px;
+}
+
+#footer .footer .footer-text .social p {
     color: #fff;
 }
 
-#contact .footer .footer-text .social .icon {
-    width: 40px;
+#footer .footer .footer-text .social .icon {
+    position: absolute;
 }
 
-#contact .footer .footer-text .top {
-    display: flex;
-    margin-bottom: 20px;
+#footer .footer .footer-text .top {
+    position: relative;
 }
 
-#contact .footer .footer-text .top .icon-left {
-    width: 35px;
+#footer .footer .footer-text .top .icon-left {
+    position: absolute;
 }
 
-#contact .footer .footer-text .top .icon-left .fa {
+#footer .footer .footer-text .top .icon-left .fa {
     color: #71b6d5;
+    font-size: 20px;
 }
 
-#contact .footer .footer-text .top .icon-text {
-    width: 100%;
+#footer .footer .footer-text .top .icon-text {
+    padding-left: 30px;
+    padding-bottom: 10px;
 }
 
-#contact .footer .footer-text .top .icon-text p {
+#footer .footer .footer-text .top .icon-text p {
     word-break: break-all;
-    padding-right: 23px;
 }
 
-#contact .footer .footer-text .top .icon-text small {
+#footer .footer .footer-text .top .icon-text small {
     font-family: var(--main-fo);
     font-size: 13.5px;
     font-weight: 400;
     color: #71b6d5;
 }
 
-#contact .footer .footer-text .item-4 p {
-    margin-bottom: 35px;
+#footer .footer .footer-text .item-4 p {
+    margin-bottom: 35px !important;
 }
 
-#contact .footer .footer-text .item-4 form {
-    display: flex;
-}
 
-#contact .footer .footer-text .item-4 form #email {
-    width: 180px;
+#footer .footer .footer-text .item-4 form input {
     display: block;
     line-height: 30px;
     padding: 0 15px;
@@ -1175,8 +1174,7 @@ ul {
     background: #172227;
 }
 
-#contact .footer .footer-text .item-4 form #sub {
-    width: 85px;
+#footer .footer .footer-text .item-4 form span {
     display: block;
     line-height: 30px;
     font-family: var(--main-fo);
@@ -1192,5 +1190,5 @@ ul {
 }
 
 /* ===================== 
-    Contact Css Ends
+    footer Css Ends
 ===================== */
