@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/flipdown.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -58,24 +59,45 @@
         Navbar Starts 
     ============= -->
 
-    <nav id="navbar">
+    <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Logo">
-                    </a>
-                </div>
-                <div class="nav-list">
-                    <ul>
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#info">about</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#testimonial">testimonials</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">aboyut</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">contact</a>
+                    </li>
+
+                </ul>
+
             </div>
         </div>
     </nav>
@@ -89,31 +111,39 @@
     ============= -->
 
     <section id="home">
-        <div class="banner-slider">
-            <div class="banner-item ">
-                <div class="banner-one">
-                    <h1>Simple,Fresh & Unique Design</h1>
-                    <p>Donec posuere augue venenatis,</p>
-                    <a href="#">show more</a>
+        <div class="container">
+            <div class="banner-slider">
+                <div class="banner-item ">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="banner-one text-center">
+                            <h1 class="mb-0">Simple,Fresh & Unique Design</h1>
+                            <p class="mb-0">Donec posuere augue venenatis,</p>
+                            <a href="#">show more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="banner-two">
+                            <h1 class="mb-0">Simple,Fresh & Unique Design</h1>
+                            <p class="mb-0">Donec posuere augue venenatis,</p>
+                            <a href="#">show more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="banner-three text-end">
+                            <h1 class="mb-0">Simple,Fresh & Unique Design</h1>
+                            <p class="mb-0">Donec posuere augue venenatis,</p>
+                            <a href="#">show more</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="banner-item">
-                <div class="banner-two">
-                    <h1>Simple,Fresh & Unique Design</h1>
-                    <p>Donec posuere augue venenatis,</p>
-                    <a href="#">show more</a>
-                </div>
-            </div>
-            <div class="banner-item">
-                <div class="banner-three">
-                    <h1>Simple,Fresh & Unique Design</h1>
-                    <p>Donec posuere augue venenatis,</p>
-                    <a href="#">show more</a>
-                </div>
-            </div>
-        </div>
 
-        <div id="particles-js"></div>
+            <div id="particles-js"></div>
+        </div>
     </section>
 
     <!-- ==========
@@ -127,89 +157,110 @@
     <section id="services">
         <div class="container">
             <div class="offer">
-                <div class="offer-heading">
-                    <h3 class="wow animate__animated wow animate__fadeInDown">What we offer</h3>
-                    <p class="wow animate__animated wow animate__fadeInDown">Vestibulum elementum ex ullamcorper ligula
+                <div class="offer-heading text-center">
+                    <h3 class="wow animate__animated wow animate__fadeInDown mb-0">What we offer</h3>
+                    <p class="wow animate__animated wow animate__fadeInDown mb-0">Vestibulum elementum ex ullamcorper
+                        ligula
                         vulputate</p>
                 </div>
                 <div class="offer-item">
-                    <div class="item-col-1">
-                        <div class="offer-item-left wow animate__animated animate__fadeInLeftBig">
-                            <div class="icon">
-                                <img src="images/offer-icon-1.png" alt="Offer-icon-1">
-                            </div>
-                            <div class="text">
-                                <h3>Vivamus tincidunt</h3>
-                                <p>Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum
-                                    elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur
-                                    tellus ligula, laoreet vitae lectus vitae</p>
-                            </div>
-                        </div>
-
-                        <div class="offer-item-right animate__animated wow animate__fadeInRightBig">
-                            <div class="icon">
-                                <img src="images/offer-icon-2.png" alt="Offer-icon-2">
-                            </div>
-                            <div class="text">
-                                <h3>Etiam porttitor sagittis ipsum</h3>
-                                <p>Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum
-                                    elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur
-                                    tellus ligula, laoreet vitae lectus vitae</p>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5">
+                            <div class="offer-item-left wow animate__animated animate__fadeInLeftBig d-flex mb-4">
+                                <div class="icon">
+                                    <img src="images/offer-icon-1.png" alt="Offer-icon-1">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb-0">Vivamus tincidunt</h3>
+                                    <p class="mb-0">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum
+                                        neque.
+                                        Vestibulum
+                                        elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper.
+                                        Curabitur
+                                        tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="item-col-2">
-                        <div class="offer-item-left  animate__animated wow animate__fadeInLeftBig">
-                            <div class="icon">
-                                <img src="images/offer-icon-3.png" alt="Offer-icon-3">
-                            </div>
-                            <div class="text">
-                                <h3>Vivamus tincidunt diam a iaculis </h3>
-                                <p>Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum
-                                    elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur
-                                    tellus ligula, laoreet vitae lectus vitae</p>
-                            </div>
-                        </div>
-
-                        <div class="offer-item-right animate__animated wow animate__fadeInRightBig">
-                            <div class=" icon">
-                                <img src="images/offer-icon-4.png" alt="Offer-icon-4">
-                            </div>
-                            <div class="text">
-                                <h3>Donec metus augue</h3>
-                                <p>Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum
-                                    elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur
-                                    tellus ligula, laoreet vitae lectus vitae</p>
+                        <div class="col-lg-6 mb-5">
+                            <div class="offer-item-right animate__animated wow animate__fadeInRightBig d-flex  mb-4">
+                                <div class="icon">
+                                    <img src="images/offer-icon-2.png" alt="Offer-icon-2">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb-0">Etiam porttitor sagittis ipsum</h3>
+                                    <p class="mb-0">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum
+                                        neque.
+                                        Vestibulum
+                                        elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper.
+                                        Curabitur
+                                        tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="item-col-3">
-                        <div class="offer-item-left  animate__animated wow animate__fadeInLeftBig">
-                            <div class="icon">
-                                <img src="images/offer-icon-5.png" alt="Offer-icon-5">
-                            </div>
-                            <div class="text">
-                                <h3>Aliquam sed mollis</h3>
-                                <p>Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum
-                                    elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur
-                                    tellus ligula, laoreet vitae lectus vitae</p>
-                            </div>
-                        </div>
-
-                        <div class="offer-item-right animate__animated wow animate__fadeInRightBig">
-                            <div class="icon">
-                                <img src="images/offer-icon-6.png" alt="Offer-icon-6">
-                            </div>
-                            <div class="text">
-                                <h3>Vestibulum placerat nisl quis </h3>
-                                <p>Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum
-                                    elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur
-                                    tellus ligula, laoreet vitae lectus vitae</p>
+                        <div class="col-lg-6 mb-5">
+                            <div class="offer-item-left  animate__animated wow animate__fadeInLeftBig d-flex mb-4">
+                                <div class="icon">
+                                    <img src="images/offer-icon-3.png" alt="Offer-icon-3">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb-0">Vivamus tincidunt diam a iaculis </h3>
+                                    <p class="mb-0">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum
+                                        neque.
+                                        Vestibulum
+                                        elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper.
+                                        Curabitur
+                                        tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
                             </div>
                         </div>
-
+                        <div class="col-lg-6 mb-5">
+                            <div class="offer-item-right animate__animated wow animate__fadeInRightBig d-flex mb-4">
+                                <div class=" icon">
+                                    <img src="images/offer-icon-4.png" alt="Offer-icon-4">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb-0">Donec metus augue</h3>
+                                    <p class="mb-0">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum
+                                        neque.
+                                        Vestibulum
+                                        elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper.
+                                        Curabitur
+                                        tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="offer-item-left  animate__animated wow animate__fadeInLeftBig d-flex ">
+                                <div class="icon">
+                                    <img src="images/offer-icon-5.png" alt="Offer-icon-5">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb-0">Aliquam sed mollis</h3>
+                                    <p class="mb-0">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum
+                                        neque.
+                                        Vestibulum
+                                        elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper.
+                                        Curabitur
+                                        tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="offer-item-right animate__animated wow animate__fadeInRightBig d-flex">
+                                <div class="icon">
+                                    <img src="images/offer-icon-6.png" alt="Offer-icon-6">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb-0">Vestibulum placerat nisl quis </h3>
+                                    <p class="mb-0">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum
+                                        neque.
+                                        Vestibulum
+                                        elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper.
+                                        Curabitur
+                                        tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,16 +282,20 @@
         <div class="info-right">
             <div class="info-text wow animate__animated wow  animate__fadeInDown">
                 <h3>Who we are</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl quis,
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl
+                    quis,
                     tristique efficitur erat. Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu
                     efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris
                     quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis
                     hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.
                 </p>
                 <p>
-                    Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit
-                    tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse
-                    auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam
+                    Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et
+                    blandit
+                    tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna.
+                    Suspendisse
+                    auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra
+                    aliquam
                     ex, sed ornare risus porta in.
                 </p>
                 <a href="#" class="animate__animated wow  animate__pulse animate__infinite">read
@@ -661,6 +716,7 @@
      ============ -->
 
     <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/slick.min.js"></script>

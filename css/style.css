@@ -32,10 +32,10 @@ ul {
     list-style: none;
 }
 
-.container {
+/* .container {
     width: 1170px;
     margin: 0 auto;
-}
+} */
 
 /* ================= 
     Common Css Ends
@@ -195,8 +195,7 @@ ul {
     Navbar Css Start
 ================= */
 
-#navbar {
-    height: 100px;
+.navbar {
     background: #fff;
     width: 100%;
     position: absolute;
@@ -210,62 +209,18 @@ ul {
     -o-transition: all linear .4s;
 }
 
-.navbar {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    transition: all linear .4s;
-    -webkit-transition: all linear .4s;
-    -moz-transition: all linear .4s;
-    -ms-transition: all linear .4s;
-    -o-transition: all linear .4s;
+.navbar .collapse {
+    padding: 28px 0 !important;
 }
 
-.navbar .logo {
-    width: 190px;
-    height: 100%;
-    transition: all linear .4s;
-    -webkit-transition: all linear .4s;
-    -moz-transition: all linear .4s;
-    -ms-transition: all linear .4s;
-    -o-transition: all linear .4s;
-}
-
-.navbar .logo a {
-    line-height: 100px;
-    transition: all linear .4s;
-    -webkit-transition: all linear .4s;
-    -moz-transition: all linear .4s;
-    -ms-transition: all linear .4s;
-    -o-transition: all linear .4s;
-}
-
-.navbar .logo a img {
-    width: 100%;
-}
-
-.navbar .nav-list {
-    width: 570px;
-    height: 100%;
-}
-
-.navbar .nav-list ul {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.navbar .nav-list ul li {}
-
-.navbar .nav-list ul li a {
+.navbar .navbar-nav li a {
     color: #222;
     font-family: var(--main-fo);
     font-weight: 400;
     font-size: 16px;
-    text-transform: capitalize;
-    padding: 0px 17px;
+    padding: 0px 17px !important;
     line-height: 44px;
-    display: inline-block;
+    /* display: inline-block; */
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
     -moz-transition: all linear .4s;
@@ -273,27 +228,18 @@ ul {
     -o-transition: all linear .4s;
 }
 
-.navbar .nav-list ul li a:hover {
+.navbar .navbar-nav li a:hover {
     background: var(--pri-bg-col);
 }
 
 .bg {
-    height: 80px !important;
     position: fixed !important;
     box-shadow: 5px 0px 5px #222;
 }
 
-.bg .navbar {
-    height: 80px;
-}
+.bg .navbar {}
 
-.bg .navbar .logo {
-    height: 80px;
-}
-
-.bg .navbar .logo a {
-    line-height: 80px;
-}
+.bg .navbar .logo a {}
 
 
 /* ================= 
@@ -307,10 +253,12 @@ ul {
 ================== */
 
 #home {
-    height: 700px;
+    padding-top: 335px;
+    padding-bottom: 100px;
     background: url(../images/banner-1.jpg) no-repeat center / cover;
     position: relative;
     z-index: 1;
+    -
 }
 
 #home::after {
@@ -334,16 +282,10 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-#home .banner-slider {
-    position: relative;
-    z-index: 2;
-    height: 100%;
+    z-index: -3;
 }
 
 #home .banner-item {
-    width: 1030px;
     margin: 0 auto;
     color: #fff;
 }
@@ -352,7 +294,6 @@ ul {
     font-family: var(--main-fo);
     font-size: 48px;
     font-weight: 700;
-    padding-top: 340px;
 }
 
 #home .banner-item p {
@@ -387,17 +328,16 @@ ul {
 
 #home .banner-prev,
 #home .banner-next {
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 28px;
     color: var(--pri-bg-col);
     border: 1px solid var(--sec-col);
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    transform: translateX(-50%);
-    line-height: 30px;
-    text-align: center;
+    top: 0;
     z-index: 10;
     cursor: pointer;
     -webkit-border-radius: 50%;
@@ -407,20 +347,13 @@ ul {
 }
 
 #home .banner-prev {
-    left: 7%;
+    left: 2%;
 }
 
 #home .banner-next {
-    right: 7%;
+    right: 2%;
 }
 
-#home .banner-prev::before {
-    margin-left: -3px;
-}
-
-#home .banner-next::before {
-    margin-right: -3px;
-}
 
 #home .banner-item a:hover {
     background: var(--pri-bg-col);
@@ -431,7 +364,7 @@ ul {
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: 80px;
+    bottom: -65px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -469,8 +402,8 @@ ul {
     border: 2px solid #fff;
     border-radius: 50%;
     position: absolute;
-    top: -12px;
-    left: -12px;
+    top: -10px;
+    left: -10px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -483,140 +416,23 @@ ul {
     border: none;
 }
 
-#home .banner-one,
-#home .banner-two,
-#home .banner-three {
-    width: 1030px;
-    margin: 0 auto;
-}
-
-#home .banner-one {
-    text-align: center;
-}
-
-#home .banner-two {
-    text-align: left;
-}
-
-#home .banner-three {
-    text-align: right;
-}
-
 
 /* ================= 
     Banner Css Ends
 ================= */
-
-
-/* ================= 
-    About Css Starts
-================= */
-
-#about {
-    background: #a5a5a5;
-    height: 400px;
-}
-
-#about .about {
-    display: flex;
-}
-
-#about .about .about-left {
-    width: 50%;
-    padding-top: 50px;
-    overflow: hidden;
-}
-
-#about .about .about-left img {
-    width: 100%;
-}
-
-#about .about .about-right {
-    width: 50%;
-    overflow: hidden;
-}
-
-#about .about .about-right h3 {
-    font-family: var(--main-fo);
-    font-size: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-top: 40px;
-    padding-left: 40px;
-}
-
-#about .about .about-right p {
-    font-family: var(--main-fo);
-    font-size: 13px;
-    line-height: 22px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-top: 5px;
-    padding-left: 40px;
-}
-
-#about .about .about-right h4 {
-    font-family: var(--main-fo);
-    font-size: 24px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-left: 40px;
-    padding-top: 5px;
-}
-
-#about #flipdown {
-    margin: 0 auto;
-    width: 450px;
-}
-
-#about .flipdown .rotor::after {
-    bottom: -5px;
-    width: 35px;
-}
-
-#about .flipdown .rotor {
-    width: 35px;
-    height: 75px;
-}
-
-#about .flipdown .rotor-leaf {
-    width: 35px;
-    height: 75px;
-}
-
-#about .flipdown .rotor-top,
-.flipdown .rotor-bottom {
-    width: 35px;
-    height: 35px;
-}
-
-#about .flipdown .rotor-leaf-front,
-.flipdown .rotor-leaf-rear {
-    width: 35px;
-}
-
-/* ================= 
-    About Css Ends
-================= */
-
 
 /* ================= 
     Offer Css Starts
 ================= */
 
 #services {
-    height: 640px;
-    padding: 80px 0 10px;
+    padding: 83px 0 95px;
     overflow: hidden;
 }
 
-#services .offer {
-    height: 640px;
-}
 
 #services .offer .offer-heading {
-    text-align: center;
-    height: 140px;
+    margin-bottom: 90px;
 }
 
 #services .offer .offer-heading h3 {
@@ -634,45 +450,22 @@ ul {
     color: var(--pri-hed-col);
 }
 
-#services .offer .offer-item {
-    height: 500px;
-}
-
-#services .offer .offer-item .item-col-1,
-#services .offer .offer-item .item-col-2,
-#services .offer .offer-item .item-col-3 {
-    height: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#services .offer .offer-item .offer-item-left,
-#services .offer .offer-item .offer-item-right {
-    width: 570px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 
 #services .offer .offer-item .icon {
-    width: 60px;
-    text-align: right;
+    margin-right: 20px;
 }
 
 #services .offer .offer-item .icon img {
     margin-top: 5px;
 }
 
-#services .offer .offer-item .text {
-    width: 485px;
-}
 
 #services .offer .offer-item .text h3 {
     font-family: var(--seco-fo);
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 
 #services .offer .offer-item .text p {
@@ -687,7 +480,6 @@ ul {
 ================= */
 
 #info {
-    height: 625px;
     display: flex;
 }
 
@@ -704,7 +496,6 @@ ul {
 }
 
 #info .info-right .info-text {
-    width: 500px;
     margin-left: 70px;
     margin-top: 95px;
 }
@@ -1155,6 +946,97 @@ ul {
     Testimonial Css Ends
 ===================== */
 
+
+/* ================= 
+    About Css Starts
+================= */
+
+#about {
+    background: #a5a5a5;
+    height: 400px;
+}
+
+#about .about {
+    display: flex;
+}
+
+#about .about .about-left {
+    width: 50%;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+#about .about .about-left img {
+    width: 100%;
+}
+
+#about .about .about-right {
+    width: 50%;
+    overflow: hidden;
+}
+
+#about .about .about-right h3 {
+    font-family: var(--main-fo);
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+#about .about .about-right p {
+    font-family: var(--main-fo);
+    font-size: 13px;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-left: 40px;
+}
+
+#about .about .about-right h4 {
+    font-family: var(--main-fo);
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+#about #flipdown {
+    margin: 0 auto;
+    width: 450px;
+}
+
+#about .flipdown .rotor::after {
+    bottom: -5px;
+    width: 35px;
+}
+
+#about .flipdown .rotor {
+    width: 35px;
+    height: 75px;
+}
+
+#about .flipdown .rotor-leaf {
+    width: 35px;
+    height: 75px;
+}
+
+#about .flipdown .rotor-top,
+.flipdown .rotor-bottom {
+    width: 35px;
+    height: 35px;
+}
+
+#about .flipdown .rotor-leaf-front,
+.flipdown .rotor-leaf-rear {
+    width: 35px;
+}
+
+/* ================= 
+    About Css Ends
+================= */
 
 
 /* ===================== 
