@@ -1,0 +1,217 @@
+:root {
+    --main-fo: 'Open Sans', sans-serif;
+    --seco-fo: 'Lato', sans-serif;
+    --thir-fo: 'PT Sans', sans-serif;
+    --pri-bg-col: #ffc155;
+    --sec-col: #709dca;
+    --pri-hed-col: #394b50;
+    --sec-tex-col: #7b7b7b;
+    --thr-tex-col: #062033;
+    --foot-tex-col: #c4c4c4;
+}
+
+/* =======================
+  Common Media Css Starts
+======================= */
+
+@media(max-width:991px) {}
+
+
+/* ====================
+  Common Media Css Ends
+=================== */
+
+/* ==========================
+   Extra Small Device Starts
+=========================== */
+
+
+@media(max-width:575px) {
+    #home .banner-item h1 {
+        font-size: 35px;
+    }
+}
+
+
+/* ==========================
+   Extra Small Device Ends
+=========================== */
+
+
+/* =====================
+    Small Device Starts
+==================== */
+
+@media (min-width:576px) and (max-width:767px) {
+    #home .banner-item h1 {
+        font-size: 35px;
+    }
+}
+
+
+/* ====================
+    Small Device Ends
+=================== */
+
+
+/* =====================
+    Medium Device Starts
+==================== */
+
+@media (min-width:555px) and (max-width:991px) {
+
+    /* .navbar .container {
+        position: relative;
+    }
+
+    .navbar .collapse {
+        padding: 0 !important;
+    }
+
+    .navbar .navbar-toggler {
+    }
+
+
+    .navbar .collapse {
+        position: absolute;
+        width: 100%;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+        top: 43px;
+    } */
+
+    .small-menu {
+        padding: 20px 0;
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .small-menu .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .small-menu button {
+        background: transparent;
+        border: none;
+        outline: none;
+        display: inline-block;
+    }
+
+    .small-menu button span {
+        background: var(--sec-col);
+        color: #fff;
+        display: block;
+        padding: 6px 10px;
+        font-size: 20px;
+    }
+
+    .offcanvas {
+        z-index: 999999999;
+    }
+
+    .offcanvas .offcanvas-body .collapse {
+        display: block;
+    }
+
+    .offcanvas .offcanvas-body .collapse ul li a {
+        color: #222;
+        font-family: var(--main-fo);
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0px 17px !important;
+        line-height: 44px;
+        /* display: inline-block; */
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+    }
+
+    .offcanvas .offcanvas-body .collapse ul li a:hover {
+        background: var(--pri-bg-col);
+    }
+
+    .offcanvas .offcanvas-body .collapse {
+        display: block;
+    }
+
+
+    /* Small Menu Ends */
+
+    #home .banner-prev {
+        left: -15%;
+    }
+
+    #home .banner-next {
+        right: -15%;
+    }
+
+    /* Banner Ends */
+
+
+    #info {
+        background: var(--pri-bg-col);
+    }
+
+    #info::before {
+        width: 0%;
+    }
+
+    #info::after {
+        width: 0%;
+    }
+
+    /* Info Ends */
+
+    #about .about .about-right h3 {
+        padding-left: 0 !important;
+    }
+
+    #about .about .about-right p {
+        padding-left: 0 !important;
+    }
+
+    #about .about .about-right h4 {
+        padding-left: 0 !important;
+    }
+
+    /* About Ends */
+
+
+    #testimonial .testimonial .testimonial-slider .testimonial-item .testimonial-text {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+}
+
+/* ====================
+    Medium Device Ends
+=================== */
+
+
+/* =====================
+    Large Device Starts
+==================== */
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+/* ====================
+    Large Device Ends
+=================== */
+
+
+/* ==========================
+    Extra Large Device Starts
+========================= */
+
+@media (min-width:1200px) {}
+
+/* =========================
+    Extra Large Device Ends
+========================= */

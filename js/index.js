@@ -64,6 +64,36 @@ $('.banner-slider').slick({
     dots: true,
     prevArrow: '<i class="fa fa-angle-left banner-prev" aria-hidden="true"></i>',
     nextArrow: '<i class="fa fa-angle-right banner-next" aria-hidden="true"></i>',
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            arrows: false,
+        }
+    }]
+});
+
+
+// Testimonial SLider
+
+$('.testimonial-slider').slick({
+    slidesToShow: 2,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: false,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+        }
+    }]
 });
 
 // Wow Js
@@ -91,15 +121,6 @@ $('.gallery-menu ul li').click(function () {
 $('.venobox').venobox();
 
 
-// Testimonial SLider
-
-$('.testimonial-slider').slick({
-    slidesToShow: 2,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    dots: true,
-    arrows: false
-});
 
 
 // Countdown Timer
@@ -109,7 +130,7 @@ $('.testimonial-slider').slick({
 document.addEventListener('DOMContentLoaded', () => {
 
     // Unix timestamp (in seconds) to count down to
-    var twoDaysFromNow = (new Date('January 01, 2022').getTime() / 1000);
+    var twoDaysFromNow = (new Date('December 01, 2022').getTime() / 1000);
 
     // Set up FlipDown
     var flipdown = new FlipDown(twoDaysFromNow)

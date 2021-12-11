@@ -484,27 +484,28 @@ ul {
 }
 
 
-#info::before{
-        content: "";
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: url(../images/about.jpg) no-repeat center / cover;
-        z-index: -1;
-    
+#info::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/about.jpg) no-repeat center / cover;
+    z-index: -1;
+
 }
-#info::after{
-        content: "";
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: var(--pri-bg-col);
-        z-index: -1;
-    
+
+#info::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--pri-bg-col);
+    z-index: -1;
+
 }
 
 
@@ -513,8 +514,7 @@ ul {
     padding-bottom: 85px;
 }
 
-#info .info-right .info-text {
-}
+#info .info-right .info-text {}
 
 #info .info-right .info-text h3 {
     font-family: var(--main-fo);
@@ -598,6 +598,8 @@ ul {
 #portfolio .gallery .gallery-top ul li {
     color: var(--pri-bg-col);
     position: relative;
+    width: 230px;
+    margin: 0 auto;
 }
 
 #portfolio .gallery .gallery-top ul li::before {
@@ -607,7 +609,7 @@ ul {
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    left: 44%;
+    left: 18%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -622,7 +624,7 @@ ul {
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    right: 37%;
+    right: -18%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -786,6 +788,8 @@ ul {
 #testimonial .testimonial .testimonial-heading ul li {
     color: var(--pri-bg-col);
     position: relative;
+    width: 230px;
+    margin: 0 auto;
 }
 
 #testimonial .testimonial .testimonial-heading ul li .fa {
@@ -799,7 +803,7 @@ ul {
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    left: 44%;
+    left: 18%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -814,7 +818,7 @@ ul {
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    right: 37%;
+    right: -18%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -834,9 +838,8 @@ ul {
 #testimonial .testimonial .testimonial-slider .testimonial-item {}
 
 #testimonial .testimonial .testimonial-slider .testimonial-item .testimonial-text {
-    width: 450px;
-    margin-left: 70px;
-    margin-right: 65px;
+    /* width: 450px; */
+    padding: 0 20px;
 }
 
 #testimonial .testimonial .testimonial-slider .testimonial-item .testimonial-text .text-top {
