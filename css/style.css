@@ -237,11 +237,6 @@ ul {
     box-shadow: 5px 0px 5px #222;
 }
 
-.bg .navbar {}
-
-.bg .navbar .logo a {}
-
-
 /* ================= 
     Navbar Css Ends
 ================= */
@@ -258,7 +253,7 @@ ul {
     background: url(../images/banner-1.jpg) no-repeat center / cover;
     position: relative;
     z-index: 1;
-    -
+
 }
 
 #home::after {
@@ -514,7 +509,6 @@ ul {
     padding-bottom: 85px;
 }
 
-#info .info-right .info-text {}
 
 #info .info-right .info-text h3 {
     font-family: var(--main-fo);
@@ -576,7 +570,6 @@ ul {
     padding-top: 100px;
 }
 
-#portfolio .gallery {}
 
 #portfolio .gallery .gallery-top {
     height: 175px;
@@ -645,7 +638,6 @@ ul {
     padding: 0 110px;
 }
 
-#portfolio .gallery .gallery-bottom {}
 
 #portfolio .gallery .gallery-bottom .gallery-menu {
     height: 65px;
@@ -835,10 +827,8 @@ ul {
     /* position: relative; */
 }
 
-#testimonial .testimonial .testimonial-slider .testimonial-item {}
 
 #testimonial .testimonial .testimonial-slider .testimonial-item .testimonial-text {
-    /* width: 450px; */
     padding: 0 20px;
 }
 
@@ -902,7 +892,6 @@ ul {
 }
 
 
-#testimonial .testimonial {}
 
 #testimonial .testimonial .slick-dots {
     display: flex;
@@ -1061,7 +1050,6 @@ ul {
     overflow: hidden;
 }
 
-#footer .footer {}
 
 
 #footer .footer .footer-heading {
