@@ -572,37 +572,41 @@ ul {
 
 
 #portfolio .gallery .gallery-top {
-    height: 175px;
     text-align: center;
 }
 
-#portfolio .gallery .gallery-top h3 {
+#portfolio .gallery .gallery-top .gallery-top-heading {
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+#portfolio .gallery .gallery-top .gallery-top-heading h3 {
     font-family: var(--main-fo);
     font-size: 26px;
     font-weight: 800;
     color: var(--sec-col);
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-#portfolio .gallery .gallery-top ul {
-    margin: 10px 0 20px;
+#portfolio .gallery .gallery-top .gallery-top-heading ul {
+    /* margin: 10px 0 20px; */
 }
 
-#portfolio .gallery .gallery-top ul li {
+#portfolio .gallery .gallery-top .gallery-top-heading ul li {
     color: var(--pri-bg-col);
     position: relative;
-    width: 230px;
-    margin: 0 auto;
 }
 
-#portfolio .gallery .gallery-top ul li::before {
+#portfolio .gallery .gallery-top .gallery-top-heading ul li::before {
     content: "";
     width: 85px;
     height: 2px;
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    left: 18%;
+    left: 40px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -610,14 +614,14 @@ ul {
     -o-transform: translateX(-50%);
 }
 
-#portfolio .gallery .gallery-top ul li::after {
+#portfolio .gallery .gallery-top .gallery-top-heading ul li::after {
     content: "";
     width: 85px;
     height: 2px;
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    right: -18%;
+    right: -40px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -625,17 +629,20 @@ ul {
     -o-transform: translateX(-50%);
 }
 
-#portfolio .gallery .gallery-top ul li .fa {
+#portfolio .gallery .gallery-top .gallery-top-heading ul li .fa {
     font-size: 25px;
 }
 
-#portfolio .gallery .gallery-top p {
+#portfolio .gallery .gallery-top .gallery-top-text {
+    margin-bottom: 50px;
+}
+
+#portfolio .gallery .gallery-top .gallery-top-text p {
     font-family: var(--main-fo);
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: #062033;
-    padding: 0 110px;
 }
 
 
@@ -669,13 +676,10 @@ ul {
 }
 
 #portfolio .gallery .gallery-bottom .gallery-image {
-    display: flex;
-    flex-wrap: wrap;
     overflow: hidden;
 }
 
 #portfolio .gallery .gallery-bottom .gallery-image .gallery-item {
-    width: 25%;
     position: relative;
     overflow: hidden;
 }
@@ -761,8 +765,9 @@ ul {
 }
 
 #testimonial .testimonial .testimonial-heading {
-    height: 130px;
-    text-align: center;
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 #testimonial .testimonial .testimonial-heading h3 {
@@ -771,21 +776,16 @@ ul {
     font-weight: 800;
     color: var(--sec-col);
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 #testimonial .testimonial .testimonial-heading ul {
-    margin: 10px 0 20px;
+    /* margin: 10px 0 20px; */
 }
 
 #testimonial .testimonial .testimonial-heading ul li {
     color: var(--pri-bg-col);
     position: relative;
-    width: 230px;
-    margin: 0 auto;
-}
-
-#testimonial .testimonial .testimonial-heading ul li .fa {
-    font-size: 25px;
 }
 
 #testimonial .testimonial .testimonial-heading ul li::before {
@@ -795,7 +795,7 @@ ul {
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    left: 18%;
+    left: 40px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -810,7 +810,7 @@ ul {
     background: var(--pri-bg-col);
     position: absolute;
     top: 50%;
-    right: -18%;
+    right: -40px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -818,7 +818,9 @@ ul {
     -o-transform: translateX(-50%);
 }
 
-
+#testimonial .testimonial .testimonial-heading ul li .fa {
+    font-size: 25px;
+}
 
 
 #testimonial .testimonial .testimonial-slider {

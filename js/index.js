@@ -101,14 +101,8 @@ $('.testimonial-slider').slick({
 new WOW().init();
 
 // init Isotope
-var $grid = $('.gallery-image').isotope();
-// filter items on button click
-$('.fillter-menu').on('click', 'li', function () {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({
-        filter: filterValue
-    });
-});
+
+var mixer = mixitup('.gallery-image');
 
 // Fillter Button Actice Class
 
