@@ -211,6 +211,11 @@ ul {
 
 .navbar .collapse {
     padding: 28px 0 !important;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 .navbar .navbar-nav li a {
@@ -235,6 +240,10 @@ ul {
 .bg {
     position: fixed !important;
     box-shadow: 5px 0px 5px #222;
+}
+
+.bg .collapse {
+    padding: 15px 0 !important;
 }
 
 /* ================= 

@@ -22,11 +22,18 @@ $(window).scroll(function () {
     } else {
         $('.scrollTop').slideUp()
     };
+
     if (scrooling > 300) {
-        $('#navbar').addClass('bg');
+        $('.navbar').addClass('bg');
     } else {
-        $('#navbar').removeClass('bg');
-    }
+        $('.navbar').removeClass('bg');
+    };
+
+    if (scrooling > 300) {
+        $('.small-menu').addClass('off-bg');
+    } else {
+        $('.small-menu').removeClass('off-bg');
+    };
 
 });
 
