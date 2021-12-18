@@ -26,11 +26,174 @@
 =========================== */
 
 
+
 @media(max-width:575px) {
     #home .banner-item h1 {
         font-size: 35px;
     }
+
+    .small-menu {
+        padding: 20px 0;
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .small-menu .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .small-menu button {
+        background: transparent;
+        border: none;
+        outline: none;
+        display: inline-block;
+    }
+
+    .small-menu button span {
+        background: var(--sec-col);
+        color: #fff;
+        display: block;
+        padding: 6px 10px;
+        font-size: 20px;
+    }
+
+    .offcanvas {
+        z-index: 999999999;
+    }
+
+    .offcanvas .offcanvas-body .collapse {
+        display: block;
+    }
+
+    .offcanvas .offcanvas-body .collapse ul li a {
+        color: #222;
+        font-family: var(--main-fo);
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0px 17px !important;
+        line-height: 44px;
+        /* display: inline-block; */
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+    }
+
+    .offcanvas .offcanvas-body .collapse ul li a:hover {
+        background: var(--pri-bg-col);
+    }
+
+    .offcanvas .offcanvas-body .collapse {
+        display: block;
+    }
+
+
+    /* Small Menu Ends */
+
+    #home {
+        padding-top: 250px;
+    }
+
+    #home .banner-item h1 {
+        font-size: 25px;
+    }
+
+    #home .banner-item p {
+        font-size: 18px;
+    }
+
+    #home .banner-item a {
+        line-height: 45px;
+        padding: 0 15px;
+        font-size: 15px;
+    }
+
+    /* Banner Ends */
+
+
+    #info {
+        background: var(--pri-bg-col);
+    }
+
+    #info::before {
+        width: 0%;
+    }
+
+    #info::after {
+        width: 0%;
+    }
+
+    /* Info Ends */
+
+    #portfolio .gallery .gallery-bottom .gallery-menu ul {
+        display: block;
+    }
+
+    /* Portfolio Ends */
+
+    #about .about .about-right h3,
+    #about .about .about-right h4,
+    #about .about .about-right p {
+        padding-left: 0 !important;
+    }
+
+
+
+    /* About Ends */
+
 }
+
+@media(max-width:550px) {
+    #about .flipdown .rotor-group {
+        padding-right: 17px !important;
+    }
+
+    #about .flipdown .rotor {
+        font-size: 1.8rem !important;
+    }
+
+    #about .flipdown .rotor {
+        width: 25px !important;
+        height: 50px !important;
+    }
+
+    #about .flipdown .rotor-leaf {
+        width: 25px !important;
+        height: 50px !important;
+    }
+
+    #about .flipdown .rotor-leaf-front,
+    .flipdown .rotor-leaf-rear {
+        width: 25px !important;
+    }
+
+    #about .flipdown .rotor-top,
+    .flipdown .rotor-bottom {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    #about .flipdown .rotor::after {
+        bottom: 0px !important;
+        width: 25px !important;
+    }
+
+    #about #flipdown {
+        margin: 0 auto !important;
+        width: max-content !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    */
+}
+
 
 
 /* ==========================
@@ -59,25 +222,6 @@
 ==================== */
 
 @media (min-width:555px) and (max-width:991px) {
-
-    /* .navbar .container {
-        position: relative;
-    }
-
-    .navbar .collapse {
-        padding: 0 !important;
-    }
-
-    .navbar .navbar-toggler {
-    }
-
-
-    .navbar .collapse {
-        position: absolute;
-        width: 100%;
-        background: rgb(255, 255, 255) none repeat scroll 0% 0%;
-        top: 43px;
-    } */
 
     .small-menu {
         padding: 20px 0;
