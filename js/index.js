@@ -1,8 +1,8 @@
 // Preloader Js
 
 $(window).on("load", function () {
-    $('.pre-main').delay(200).fadeOut();
-    $('.pre-main .preloader').delay(200).fadeOut();
+    $('.pre-main').delay(2000).fadeOut();
+    $('.pre-main .preloader').delay(2000).fadeOut();
     $('.pre-main span:first-of-type').css({
         'left': '-50%'
     })
@@ -13,7 +13,7 @@ $(window).on("load", function () {
 
 })
 
-// Preloader Js
+// Sticky Menu Js
 
 $(window).scroll(function () {
     var scrooling = $(this).scrollTop();
