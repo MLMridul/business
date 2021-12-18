@@ -590,10 +590,6 @@ ul {
     margin-bottom: 10px;
 }
 
-#portfolio .gallery .gallery-top .gallery-top-heading ul {
-    /* margin: 10px 0 20px; */
-}
-
 #portfolio .gallery .gallery-top .gallery-top-heading ul li {
     color: var(--pri-bg-col);
     position: relative;
@@ -780,9 +776,6 @@ ul {
     margin-bottom: 10px;
 }
 
-#testimonial .testimonial .testimonial-heading ul {
-    /* margin: 10px 0 20px; */
-}
 
 #testimonial .testimonial .testimonial-heading ul li {
     color: var(--pri-bg-col);
