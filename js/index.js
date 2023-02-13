@@ -131,7 +131,7 @@ $('.venobox').venobox();
 document.addEventListener('DOMContentLoaded', () => {
 
     // Unix timestamp (in seconds) to count down to
-    var twoDaysFromNow = (new Date('December 01, 2022').getTime() / 1000);
+    var twoDaysFromNow = (new Date('December 01, 2023').getTime() / 1000);
 
     // Set up FlipDown
     var flipdown = new FlipDown(twoDaysFromNow)
